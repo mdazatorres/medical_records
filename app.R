@@ -5,8 +5,8 @@ library(ggplot2)
 library(plotly)
 library(DT)
 
-app_dir <- normalizePath(getwd())
-data_file <- file.path(app_dir, "..", "outputs", "expediente_medico_historico", "expediente_medico_historico.xlsx")
+
+data_file <- file.path("data/expediente_medico_historico.xlsx")
 if (!file.exists(data_file)) stop("No se encontró el Excel histórico: ", data_file)
 
 raw <- read_excel(data_file, sheet = "Laboratorios", skip = 3, na = c("", "NA"))
