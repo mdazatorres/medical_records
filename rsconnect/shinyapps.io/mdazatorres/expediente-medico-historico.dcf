@@ -1,0 +1,10 @@
+name: expediente-medico-historico
+title:
+username: mdazatorres
+account: mdazatorres
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 18442067
+bundleId: 12820482
+url: https://mdazatorres.shinyapps.io/expediente-medico-historico/
+version: 1

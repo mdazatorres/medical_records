@@ -182,8 +182,8 @@ server <- function(input, output, session) {
     p <- ggplot(df, aes(fecha, valor, color = prueba, group = prueba, text = tooltip)) +
       geom_line(linewidth = 0.5, lineend = "round", na.rm = TRUE) +
       geom_point(size = 1.6, na.rm = TRUE) +
-      labs(x = NULL, y = "Valor", color = "Marcador") + theme_minimal(base_size = 13) +
-      theme(legend.position = "top", legend.direction = "horizontal", panel.grid.minor = element_blank())
+      labs(x = NULL, y = "Valor") + theme_minimal(base_size = 13) +
+      theme(legend.position = "none", panel.grid.minor = element_blank())
     refs <- reference_lines(df)
     if (nrow(refs)) {
       p <- p + geom_hline(
